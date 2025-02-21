@@ -1,67 +1,159 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serviços</title>
+    <title>Contatos</title>
     <link rel="stylesheet" href="index.html">
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
         }
-        .header {
+
+        .navbar {
             background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 14px 20px;
+            text-decoration: none;
         }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
         .container {
             padding: 20px;
         }
-        .service-card {
-            background-color: white;
-            border: 1px solid #ddd;
-            padding: 20px;
+        .flash {
+            padding:20px;
+        }
+
+        .service-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .service-list li {
+            background-color: #f4f4f4;
             margin: 10px 0;
+            padding: 15px;
             border-radius: 8px;
         }
-        .service-card h3 {
-            margin-top: 0;
+
+        input[type="submit"] {
+            width: auto;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
         }
-        .service-card p {
-            color: #555;
+
+        input,
+        textarea {
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            width: 100%;
+            box-sizing: border-box;
+            border-radius: 4px;
+            border: 1px solid #444;
+            background-color: #fffdfd;
+            color: rgb(0, 0, 0);
         }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fdfdfd;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(176, 29, 29, 0.2);
+        }
+
+        .countainer {
+            padding: 0px 30px;
+        }
+
     </style>
 </head>
-<body>
 
-    <div class="header">
-        <h1>Serviços</h1>
-    </div>
+<body>
 
     <div class="navbar">
         <a href="index.html">Sobre</a>
         <a href="serviços.html">Serviços</a>
         <a href="contatos.html">Contato</a>
     </div>
-     
+
     <div class="container">
+        <h2>Contatos:</h2>
         <div class="service-card">
-            <h3>Consultoria Agronômica</h3>
-            <p>Oferecemos consultoria especializada em planejamento agrícola, gestão de propriedades e uso sustentável do solo.</p>
+            <h3>Fale Conosco</h3>
+            <p>Tem dúvidas ou precisa de ajuda? Entre em contato conosco! | CEP: 13480-000</p>
         </div>
         <div class="service-card">
-            <h3>Transporte e Logística</h3>
-            <p>Serviços de transporte rural e logística para fazendas, garantindo eficiência e segurança nas operações.</p>
+            <h2>Endereço:</h3>
+            <p>Avenida das Indústrias, 456 – Jardim Nova Limeira, Limeira, SP</p>
         </div>
         <div class="service-card">
-            <h3>Cuidados com o Gado</h3>
-            <p>Cuidados profissionais para rebanhos, incluindo alimentação, saúde e manejo adequado dos animais.</p>
+            <h3>E-mail:</h3>
+            <p>FlashControl@gmail.com
+
+            </p>
+        </div>
+        <div class="service-card">
+            <h3>Telefone/WhatsApp</h3>
+            <p>(19) 9853-8753</p>
+
+            <div class="service-card">
+                <h3>Horário de Atendimento:</h3>
+
+                <p>Segunda a Sexta: 8h – 18h | Sábado: 9h – 13h</p>
+            </div>
         </div>
     </div>
+    <main>
+        <section class="flash">
+          <h3> Formulário de Contato:</h3>
+            <br> </br>
+            <form action="enviar-formulario.html" method="get" target="_blank">
+                <label for="nome">Nome:</label>
+
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Seu email" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Seu telefone">
+
+                <label for="email">Seu Endereço:</label>
+                <input type="email" id="email" name="email" placeholder="Seu endereço" required>
+
+                <label for="email">Sua Mensagem:</label>
+                <input type="email" id="email" name="email" placeholder="Sua mensagem" required>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
 
 </body>
+
 </html>
