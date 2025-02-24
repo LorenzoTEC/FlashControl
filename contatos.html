@@ -8,6 +8,121 @@
     <link rel="stylesheet" href="index.html">
     <style>
         body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            animation: fade-in 1.5s ease-in-out;
+        }
+
+        .logo-container img {
+            width: 300px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .logo-container img:hover {
+            transform: scale(1.1);
+        }
+
+        nav {
+            text-align: center;
+            background: #444;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        nav a:hover {
+            color: #f4f4f4;
+            transform: scale(1.1);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fade-in-up 1s ease-out forwards;
+        }
+
+        .service-card {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        input[type="submit"] {
+            width: auto;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+            transform: scale(1.05);
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade-in-up {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            bottom: 0;
+            width: 100%;
+        }
+
+        body {
             font-family: 'Courier New', Courier, monospace, sans-serif;
             margin: 0;
             padding: 0;
@@ -131,8 +246,9 @@
         <a href="serviços.html">Serviços</a>
         <a href="contatos.html">Contato</a>
 
-        <li><a href="https://www.mediafire.com/file/qccxtx7i1sed9p8/Convensor+de+dados.py/file">Teste aqui</a></li>
-        </ul>
+        <a href="https://www.mediafire.com/file/qccxtx7i1sed9p8/Convensor+de+dados.py/file" target="_blank">
+            Teste Aqui
+          </a>
 
     </div>
 
@@ -152,19 +268,21 @@
         <div class="service-card">
             <h3>E-mail:</h3>
             <p>FlashControl@gmail.com
-             <br>
+                <br>
         </div>
+
         <div class="service-card">
             <h3>Telefone/WhatsApp</h3>
             <p>(19) 9853-8753</p>
             <br>
-            <div class="service-card">
-                <h3>Horário de Atendimento:</h3>
-                <p>Segunda a Sexta: 8h – 18h</p>
-                <p>Sábado: 9h – 13h </p>
-                <br>
-            </div>
         </div>
+        <div class="service-card">
+            <h3>Horário de Atendimento:</h3>
+            <p>Segunda a Sexta: 8h – 18h</p>
+            <p>Sábado: 9h – 13h </p>
+            <br>
+        </div>
+    </div>
     </div>
     <main>
         <section class="flash">
