@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
- 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,49 +8,55 @@
     <link rel="stylesheet" href="index.html">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Courier New', Courier, monospace, sans-serif;
             margin: 0;
             padding: 0;
+            text-align: center;
         }
- 
+
         .navbar {
             background-color: #333;
             overflow: hidden;
+            text-align: center;
         }
- 
+
         .navbar a {
-            float: left;
-            display: block;
+            display: inline-block;
             color: white;
             text-align: center;
             padding: 14px 20px;
             text-decoration: none;
         }
- 
+
         .navbar a:hover {
             background-color: #ddd;
             color: black;
         }
- 
+
         .container {
             padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
         }
+
         .flash {
-            padding:20px;
+            padding: 20px;
         }
- 
+
         .service-list {
             list-style-type: none;
             padding: 0;
+            margin: 0 auto;
+            width: 80%;
         }
- 
+
         .service-list li {
             background-color: #f4f4f4;
             margin: 10px 0;
             padding: 15px;
             border-radius: 8px;
         }
- 
+
         input[type="submit"] {
             width: auto;
             padding: 10px 20px;
@@ -61,7 +67,7 @@
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
- 
+
         input,
         textarea {
             padding: 10px;
@@ -74,38 +80,62 @@
             background-color: #fffdfd;
             color: rgb(0, 0, 0);
         }
- 
+
         form {
             display: flex;
             flex-direction: column;
-            max-width: 400px;
+            max-width: 600px;
             margin: 0 auto;
             background-color: #fdfdfd;
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-           
+            box-shadow: 0 4px 8px rgba(176, 29, 29, 0.2);
         }
- 
+
         .countainer {
             padding: 0px 30px;
         }
- 
+
+
+        .about-section,
+        .services-section,
+        .contact-section {
+            padding: 40px;
+            margin-top: 30px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .about-section h2,
+        .services-section h2,
+        .contact-section h2 {
+            text-align: center;
+        }
+
+        .about-section p,
+        .services-section p,
+        .contact-section p {
+            text-align: center;
+            margin: 15px 0;
+        }
     </style>
 </head>
- 
+
 <body>
- 
+
     <div class="navbar">
         <a href="index.html">Sobre</a>
         <a href="serviços.html">Serviços</a>
         <a href="contatos.html">Contato</a>
- 
-            <li><a href="https://www.mediafire.com/file/qccxtx7i1sed9p8/Convensor+de+dados.py/file">Teste aqui</a></li>
+
+        <li><a href="https://www.mediafire.com/file/qccxtx7i1sed9p8/Convensor+de+dados.py/file">Teste aqui</a></li>
         </ul>
-       
+
     </div>
- 
+
     <div class="container">
         <h2>Contatos:</h2>
         <div class="service-card">
@@ -119,46 +149,46 @@
         <div class="service-card">
             <h3>E-mail:</h3>
             <p>FlashControl@gmail.com
- 
+
             </p>
         </div>
         <div class="service-card">
             <h3>Telefone/WhatsApp</h3>
             <p>(19) 9853-8753</p>
- 
+
             <div class="service-card">
                 <h3>Horário de Atendimento:</h3>
- 
+
                 <p>Segunda a Sexta: 8h – 18h | Sábado: 9h – 13h</p>
             </div>
         </div>
     </div>
     <main>
         <section class="flash">
-          <h3> Formulário de Contato:</h3>
+            <h3> Formulário de Contato:</h3>
             <br> </br>
             <form action="enviar-formulario.html" method="get" target="_blank">
                 <label for="nome">Nome:</label>
- 
+
                 <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
- 
+
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" placeholder="Seu email" required>
- 
+
                 <label for="telefone">Telefone:</label>
                 <input type="tel" id="telefone" name="telefone" placeholder="Seu telefone">
- 
+
                 <label for="email">Seu Endereço:</label>
                 <input type="email" id="email" name="email" placeholder="Seu endereço" required>
- 
+
                 <label for="email">Sua Mensagem:</label>
                 <input type="email" id="email" name="email" placeholder="Sua mensagem" required>
- 
+
                 <input type="submit" value="Enviar">
             </form>
         </section>
     </main>
- 
+
 </body>
- 
+
 </html>
